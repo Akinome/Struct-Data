@@ -15,5 +15,5 @@ void hannoi(char A,char B,char C, int num) {
 
 int main() {
     char A = 'A',B = 'B' ,C = 'C';
-    hannoi('A','B','C',64);
+    hannoi('A','B','C',3);
 }
