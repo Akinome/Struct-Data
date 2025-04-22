@@ -1,7 +1,7 @@
 # include <stdio.h>
 
 void move(char from,char to) {
-    printf(" %c -> %c",from,to);
+    printf(" %c -> %c\n",from,to);
 }
 void hannoi(char A,char B,char C, int num) {
     if (num == 1) {
@@ -9,11 +9,11 @@ void hannoi(char A,char B,char C, int num) {
     }else {
         hannoi(A,C,B,num-1);
         move(A,C);
-        hannoi(A,A,C,num-1);
+        hannoi(B,A,C,num-1);
     }
 }
 
 int main() {
     char A = 'A',B = 'B' ,C = 'C';
-    hannoi('A','B','C',3);
+    hannoi('A','B','C',64);
 }
