@@ -29,7 +29,7 @@ void bubble_sort(int result[],int size) {
 }
 
 int main(){
-    int result[m+n];
+    int result[m + n];
     mergeArrays(nums1, nums2, m, n, result);
     bubble_sort(result,m+n);
     for (int i=0;i<m+n;i++) {
